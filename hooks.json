@@ -1,0 +1,40 @@
+[
+  {
+    "id": "deploy",
+    "execute-command": "/Users/dryg/code/scripts/deploy.sh",
+    "command-working-directory": "/Users/dryg/code/",
+    "pass-arguments-to-command":
+    [
+      {
+        "source": "payload",
+        "name": "repository.name"
+      },
+      {
+        "source": "payload",
+        "name": "repository.ssh_url"
+      },
+      {
+        "source": "payload",
+        "name": "pusher.email"
+      }
+    ],
+    "trigger-rule":
+    {
+      "and":
+      [
+        {
+          "match":
+          {
+            "type": "value",
+            "value": "refs/heads/master",
+            "parameter":
+            {
+              "source": "payload",
+              "name": "ref"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
