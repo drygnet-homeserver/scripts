@@ -1,0 +1,27 @@
+{
+  "name": "drygnet-scripts",
+  "version": "1.0.0",
+  "description": "scripts that run on the host system, everything else will be in docker",
+  "main": "smee.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drygnet-homeserver/scripts.git"
+  },
+  "keywords": [
+    "CI",
+    "CD"
+  ],
+  "author": "Johan Blomgren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drygnet-homeserver/scripts/issues"
+  },
+  "homepage": "https://github.com/drygnet-homeserver/scripts#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "smee-client": "^1.2.3"
+  }
+}
