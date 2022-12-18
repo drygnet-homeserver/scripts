@@ -5,6 +5,7 @@ the [smee.js -script](https://github.com/drygnet-homeserver/scripts/blob/main/sm
 
 ### start
 pm2 start webhook -- -hooks /hooks.json -verbose
+
 pm2 start smee.js
 
 webhook then runs the [deploy.sh](https://github.com/drygnet-homeserver/scripts/blob/main/deploy.sh) -script
